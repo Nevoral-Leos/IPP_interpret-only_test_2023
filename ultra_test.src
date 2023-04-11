@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program language="IPPcode23">
+ <instruction order="1" opcode="DEFVAR">
+  <arg1 type="var">GF@testcount</arg1>
+ </instruction>
+ <instruction order="2" opcode="MOVE">
+  <arg1 type="var">GF@testcount</arg1>
+  <arg2 type="int">1</arg2>
+ </instruction>
+ <instruction order="3" opcode="WRITE">
+  <arg1 type="string">Aritmetika\010</arg1>
+ </instruction>
+ <instruction order="4" opcode="DEFVAR">
+  <arg1 type="var">GF@add</arg1>
+ </instruction>
+ <instruction order="5" opcode="DEFVAR">
+  <arg1 type="var">GF@sub</arg1>
+ </instruction>
+ <instruction order="6" opcode="DEFVAR">
+  <arg1 type="var">GF@mul</arg1>
+ </instruction>
+ <instruction order="7" opcode="DEFVAR">
+  <arg1 type="var">GF@div</arg1>
+ </instruction>
+ <instruction order="8" opcode="DEFVAR">
+  <arg1 type="var">GF@a</arg1>
+ </instruction>
+ <instruction order="9" opcode="MOVE">
+  <arg1 type="var">GF@a</arg1>
+  <arg2 type="int">10</arg2>
+ </instruction>
+ <instruction order="10" opcode="DEFVAR">
+  <arg1 type="var">GF@b</arg1>
+ </instruction>
+ <instruction order="11" opcode="MOVE">
+  <arg1 type="var">GF@b</arg1>
+  <arg2 type="int">5</arg2>
+ </instruction>
+ <instruction order="12" opcode="ADD">
+  <arg1 type="var">GF@add</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="13" opcode="SUB">
+  <arg1 type="var">GF@sub</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="14" opcode="MUL">
+  <arg1 type="var">GF@mul</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="15" opcode="IDIV">
+  <arg1 type="var">GF@div</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="16" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="17" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="18" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="19" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="int">15</arg2>
+ </instruction>
+ <instruction order="20" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@add</arg2>
+ </instruction>
+ <instruction order="21" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="22" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="23" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="24" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="25" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="26" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="int">5</arg2>
+ </instruction>
+ <instruction order="27" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@sub</arg2>
+ </instruction>
+ <instruction order="28" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="29" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="30" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="31" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="32" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="33" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="int">50</arg2>
+ </instruction>
+ <instruction order="34" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@mul</arg2>
+ </instruction>
+ <instruction order="35" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="36" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="37" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="38" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="39" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="40" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="int">2</arg2>
+ </instruction>
+ <instruction order="41" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@div</arg2>
+ </instruction>
+ <instruction order="42" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="43" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="44" opcode="DEFVAR">
+  <arg1 type="var">GF@lt</arg1>
+ </instruction>
+ <instruction order="45" opcode="DEFVAR">
+  <arg1 type="var">GF@gt</arg1>
+ </instruction>
+ <instruction order="46" opcode="DEFVAR">
+  <arg1 type="var">GF@eq</arg1>
+ </instruction>
+ <instruction order="47" opcode="DEFVAR">
+  <arg1 type="var">GF@and</arg1>
+ </instruction>
+ <instruction order="48" opcode="DEFVAR">
+  <arg1 type="var">GF@or</arg1>
+ </instruction>
+ <instruction order="49" opcode="DEFVAR">
+  <arg1 type="var">GF@not</arg1>
+ </instruction>
+ <instruction order="50" opcode="WRITE">
+  <arg1 type="string">Logika\032-\032int\010</arg1>
+ </instruction>
+ <instruction order="51" opcode="MOVE">
+  <arg1 type="var">GF@a</arg1>
+  <arg2 type="int">10</arg2>
+ </instruction>
+ <instruction order="52" opcode="MOVE">
+  <arg1 type="var">GF@b</arg1>
+  <arg2 type="int">5</arg2>
+ </instruction>
+ <instruction order="53" opcode="LT">
+  <arg1 type="var">GF@lt</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="54" opcode="GT">
+  <arg1 type="var">GF@gt</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="55" opcode="EQ">
+  <arg1 type="var">GF@eq</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="56" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="57" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="58" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="59" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">false</arg2>
+ </instruction>
+ <instruction order="60" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@lt</arg2>
+ </instruction>
+ <instruction order="61" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="62" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="63" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="64" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="65" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="66" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">true</arg2>
+ </instruction>
+ <instruction order="67" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@gt</arg2>
+ </instruction>
+ <instruction order="68" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="69" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="70" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="71" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="72" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="73" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">false</arg2>
+ </instruction>
+ <instruction order="74" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@eq</arg2>
+ </instruction>
+ <instruction order="75" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="76" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="77" opcode="MOVE">
+  <arg1 type="var">GF@b</arg1>
+  <arg2 type="int">10</arg2>
+ </instruction>
+ <instruction order="78" opcode="EQ">
+  <arg1 type="var">GF@eq</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="79" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="80" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="81" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="82" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">true</arg2>
+ </instruction>
+ <instruction order="83" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@eq</arg2>
+ </instruction>
+ <instruction order="84" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="85" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="86" opcode="WRITE">
+  <arg1 type="string">Logika\032-\032string\010</arg1>
+ </instruction>
+ <instruction order="87" opcode="MOVE">
+  <arg1 type="var">GF@a</arg1>
+  <arg2 type="string">aaaaa</arg2>
+ </instruction>
+ <instruction order="88" opcode="MOVE">
+  <arg1 type="var">GF@b</arg1>
+  <arg2 type="string">aaa</arg2>
+ </instruction>
+ <instruction order="89" opcode="LT">
+  <arg1 type="var">GF@lt</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="90" opcode="GT">
+  <arg1 type="var">GF@gt</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="91" opcode="EQ">
+  <arg1 type="var">GF@eq</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="92" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="93" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="94" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="95" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">false</arg2>
+ </instruction>
+ <instruction order="96" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@lt</arg2>
+ </instruction>
+ <instruction order="97" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="98" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="99" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="100" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="101" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="102" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">true</arg2>
+ </instruction>
+ <instruction order="103" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@gt</arg2>
+ </instruction>
+ <instruction order="104" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="105" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="106" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="107" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="108" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="109" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">false</arg2>
+ </instruction>
+ <instruction order="110" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@eq</arg2>
+ </instruction>
+ <instruction order="111" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="112" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="113" opcode="MOVE">
+  <arg1 type="var">GF@b</arg1>
+  <arg2 type="string">aaaaa</arg2>
+ </instruction>
+ <instruction order="114" opcode="EQ">
+  <arg1 type="var">GF@eq</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="115" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="116" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="117" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="118" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">true</arg2>
+ </instruction>
+ <instruction order="119" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@eq</arg2>
+ </instruction>
+ <instruction order="120" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="121" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="122" opcode="WRITE">
+  <arg1 type="string">Logika\032-\032bool\010</arg1>
+ </instruction>
+ <instruction order="123" opcode="MOVE">
+  <arg1 type="var">GF@a</arg1>
+  <arg2 type="bool">true</arg2>
+ </instruction>
+ <instruction order="124" opcode="MOVE">
+  <arg1 type="var">GF@b</arg1>
+  <arg2 type="bool">false</arg2>
+ </instruction>
+ <instruction order="125" opcode="LT">
+  <arg1 type="var">GF@lt</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="126" opcode="GT">
+  <arg1 type="var">GF@gt</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="127" opcode="EQ">
+  <arg1 type="var">GF@eq</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="128" opcode="AND">
+  <arg1 type="var">GF@and</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="129" opcode="OR">
+  <arg1 type="var">GF@or</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="130" opcode="NOT">
+  <arg1 type="var">GF@not</arg1>
+  <arg2 type="var">GF@b</arg2>
+ </instruction>
+ <instruction order="131" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="132" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="133" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="134" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">false</arg2>
+ </instruction>
+ <instruction order="135" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@lt</arg2>
+ </instruction>
+ <instruction order="136" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="137" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="138" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="139" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="140" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="141" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">true</arg2>
+ </instruction>
+ <instruction order="142" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@gt</arg2>
+ </instruction>
+ <instruction order="143" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="144" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="145" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="146" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="147" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="148" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">false</arg2>
+ </instruction>
+ <instruction order="149" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@eq</arg2>
+ </instruction>
+ <instruction order="150" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="151" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="152" opcode="MOVE">
+  <arg1 type="var">GF@b</arg1>
+  <arg2 type="bool">true</arg2>
+ </instruction>
+ <instruction order="153" opcode="EQ">
+  <arg1 type="var">GF@eq</arg1>
+  <arg2 type="var">GF@a</arg2>
+  <arg3 type="var">GF@b</arg3>
+ </instruction>
+ <instruction order="154" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="155" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="156" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="157" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">true</arg2>
+ </instruction>
+ <instruction order="158" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@eq</arg2>
+ </instruction>
+ <instruction order="159" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="160" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="161" opcode="MOVE">
+  <arg1 type="var">GF@b</arg1>
+  <arg2 type="bool">false</arg2>
+ </instruction>
+ <instruction order="162" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="163" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="164" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="165" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">false</arg2>
+ </instruction>
+ <instruction order="166" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@and</arg2>
+ </instruction>
+ <instruction order="167" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="168" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="169" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="170" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="171" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="172" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">true</arg2>
+ </instruction>
+ <instruction order="173" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@or</arg2>
+ </instruction>
+ <instruction order="174" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="175" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="176" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="177" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="178" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="179" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="bool">true</arg2>
+ </instruction>
+ <instruction order="180" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@not</arg2>
+ </instruction>
+ <instruction order="181" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="182" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="183" opcode="WRITE">
+  <arg1 type="string">Loops\010</arg1>
+ </instruction>
+ <instruction order="184" opcode="WRITE">
+  <arg1 type="string">Zadej\032počet\032iterací:\032</arg1>
+ </instruction>
+ <instruction order="185" opcode="DEFVAR">
+  <arg1 type="var">GF@counter</arg1>
+ </instruction>
+ <instruction order="186" opcode="MOVE">
+  <arg1 type="var">GF@counter</arg1>
+  <arg2 type="int">0</arg2>
+ </instruction>
+ <instruction order="187" opcode="DEFVAR">
+  <arg1 type="var">GF@input</arg1>
+ </instruction>
+ <instruction order="188" opcode="READ">
+  <arg1 type="var">GF@input</arg1>
+  <arg2 type="type">int</arg2>
+ </instruction>
+ <instruction order="189" opcode="WRITE">
+  <arg1 type="var">GF@input</arg1>
+ </instruction>
+ <instruction order="190" opcode="WRITE">
+  <arg1 type="string">\010</arg1>
+ </instruction>
+ <instruction order="191" opcode="LABEL">
+  <arg1 type="label">while</arg1>
+ </instruction>
+ <instruction order="192" opcode="JUMPIFEQ">
+  <arg1 type="label">loop_end</arg1>
+  <arg2 type="var">GF@counter</arg2>
+  <arg3 type="var">GF@input</arg3>
+ </instruction>
+ <instruction order="193" opcode="ADD">
+  <arg1 type="var">GF@counter</arg1>
+  <arg2 type="var">GF@counter</arg2>
+  <arg3 type="int">1</arg3>
+ </instruction>
+ <instruction order="194" opcode="JUMP">
+  <arg1 type="label">while</arg1>
+ </instruction>
+ <instruction order="195" opcode="LABEL">
+  <arg1 type="label">loop_end</arg1>
+ </instruction>
+ <instruction order="196" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="197" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="198" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="199" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="var">GF@input</arg2>
+ </instruction>
+ <instruction order="200" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@counter</arg2>
+ </instruction>
+ <instruction order="201" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="202" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="203" opcode="WRITE">
+  <arg1 type="string">String,\032typy\010</arg1>
+ </instruction>
+ <instruction order="204" opcode="DEFVAR">
+  <arg1 type="var">GF@text</arg1>
+ </instruction>
+ <instruction order="205" opcode="DEFVAR">
+  <arg1 type="var">GF@char</arg1>
+ </instruction>
+ <instruction order="206" opcode="DEFVAR">
+  <arg1 type="var">GF@len</arg1>
+ </instruction>
+ <instruction order="207" opcode="DEFVAR">
+  <arg1 type="var">GF@strtype</arg1>
+ </instruction>
+ <instruction order="208" opcode="DEFVAR">
+  <arg1 type="var">GF@inttype</arg1>
+ </instruction>
+ <instruction order="209" opcode="DEFVAR">
+  <arg1 type="var">GF@uninit</arg1>
+ </instruction>
+ <instruction order="210" opcode="DEFVAR">
+  <arg1 type="var">GF@null</arg1>
+ </instruction>
+ <instruction order="211" opcode="DEFVAR">
+  <arg1 type="var">GF@uninittype</arg1>
+ </instruction>
+ <instruction order="212" opcode="MOVE">
+  <arg1 type="var">GF@null</arg1>
+  <arg2 type="nil">nil</arg2>
+ </instruction>
+ <instruction order="213" opcode="MOVE">
+  <arg1 type="var">GF@text</arg1>
+  <arg2 type="string">ahoj</arg2>
+ </instruction>
+ <instruction order="214" opcode="STRLEN">
+  <arg1 type="var">GF@len</arg1>
+  <arg2 type="var">GF@text</arg2>
+ </instruction>
+ <instruction order="215" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="216" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="217" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="218" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="int">4</arg2>
+ </instruction>
+ <instruction order="219" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@len</arg2>
+ </instruction>
+ <instruction order="220" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="221" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="222" opcode="GETCHAR">
+  <arg1 type="var">GF@char</arg1>
+  <arg2 type="string">asdasd</arg2>
+  <arg3 type="int">2</arg3>
+ </instruction>
+ <instruction order="223" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="224" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="225" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="226" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="string">d</arg2>
+ </instruction>
+ <instruction order="227" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@char</arg2>
+ </instruction>
+ <instruction order="228" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="229" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="230" opcode="SETCHAR">
+  <arg1 type="var">GF@text</arg1>
+  <arg2 type="int">1</arg2>
+  <arg3 type="string">a</arg3>
+ </instruction>
+ <instruction order="231" opcode="SETCHAR">
+  <arg1 type="var">GF@text</arg1>
+  <arg2 type="int">3</arg2>
+  <arg3 type="string">a</arg3>
+ </instruction>
+ <instruction order="232" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="233" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="234" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="235" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="string">aaoa</arg2>
+ </instruction>
+ <instruction order="236" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@text</arg2>
+ </instruction>
+ <instruction order="237" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="238" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="239" opcode="TYPE">
+  <arg1 type="var">GF@strtype</arg1>
+  <arg2 type="var">GF@text</arg2>
+ </instruction>
+ <instruction order="240" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="241" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="242" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="243" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="string">string</arg2>
+ </instruction>
+ <instruction order="244" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@strtype</arg2>
+ </instruction>
+ <instruction order="245" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="246" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="247" opcode="TYPE">
+  <arg1 type="var">GF@inttype</arg1>
+  <arg2 type="var">GF@len</arg2>
+ </instruction>
+ <instruction order="248" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="249" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="250" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="251" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="string">int</arg2>
+ </instruction>
+ <instruction order="252" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@inttype</arg2>
+ </instruction>
+ <instruction order="253" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="254" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="255" opcode="TYPE">
+  <arg1 type="var">GF@uninittype</arg1>
+  <arg2 type="var">GF@uninit</arg2>
+ </instruction>
+ <instruction order="256" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="257" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="258" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="259" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="string"></arg2>
+ </instruction>
+ <instruction order="260" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@uninittype</arg2>
+ </instruction>
+ <instruction order="261" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="262" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="263" opcode="TYPE">
+  <arg1 type="var">GF@uninittype</arg1>
+  <arg2 type="var">GF@null</arg2>
+ </instruction>
+ <instruction order="264" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="265" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="266" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="267" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="string">nil</arg2>
+ </instruction>
+ <instruction order="268" opcode="MOVE">
+  <arg1 type="var">TF@testB</arg1>
+  <arg2 type="var">GF@uninittype</arg2>
+ </instruction>
+ <instruction order="269" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="270" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="271" opcode="WRITE">
+  <arg1 type="string">Stack\010</arg1>
+ </instruction>
+ <instruction order="272" opcode="DEFVAR">
+  <arg1 type="var">GF@firstin</arg1>
+ </instruction>
+ <instruction order="273" opcode="MOVE">
+  <arg1 type="var">GF@firstin</arg1>
+  <arg2 type="string">first_in</arg2>
+ </instruction>
+ <instruction order="274" opcode="DEFVAR">
+  <arg1 type="var">GF@secondin</arg1>
+ </instruction>
+ <instruction order="275" opcode="MOVE">
+  <arg1 type="var">GF@secondin</arg1>
+  <arg2 type="string">second_in</arg2>
+ </instruction>
+ <instruction order="276" opcode="PUSHS">
+  <arg1 type="var">GF@firstin</arg1>
+ </instruction>
+ <instruction order="277" opcode="PUSHS">
+  <arg1 type="var">GF@secondin</arg1>
+ </instruction>
+ <instruction order="278" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="279" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="280" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="281" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="string">second_in</arg2>
+ </instruction>
+ <instruction order="282" opcode="POPS">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="283" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="284" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="285" opcode="CREATEFRAME">
+ </instruction>
+ <instruction order="286" opcode="DEFVAR">
+  <arg1 type="var">TF@testA</arg1>
+ </instruction>
+ <instruction order="287" opcode="DEFVAR">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="288" opcode="MOVE">
+  <arg1 type="var">TF@testA</arg1>
+  <arg2 type="string">first_in</arg2>
+ </instruction>
+ <instruction order="289" opcode="POPS">
+  <arg1 type="var">TF@testB</arg1>
+ </instruction>
+ <instruction order="290" opcode="PUSHFRAME">
+ </instruction>
+ <instruction order="291" opcode="CALL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="292" opcode="JUMP">
+  <arg1 type="label">end</arg1>
+ </instruction>
+ <instruction order="293" opcode="LABEL">
+  <arg1 type="label">test</arg1>
+ </instruction>
+ <instruction order="294" opcode="WRITE">
+  <arg1 type="string">Test\032[</arg1>
+ </instruction>
+ <instruction order="295" opcode="WRITE">
+  <arg1 type="var">GF@testcount</arg1>
+ </instruction>
+ <instruction order="296" opcode="ADD">
+  <arg1 type="var">GF@testcount</arg1>
+  <arg2 type="var">GF@testcount</arg2>
+  <arg3 type="int">1</arg3>
+ </instruction>
+ <instruction order="297" opcode="WRITE">
+  <arg1 type="string">]\010\009Očekávaná\032hodnota:\032</arg1>
+ </instruction>
+ <instruction order="298" opcode="WRITE">
+  <arg1 type="var">LF@testA</arg1>
+ </instruction>
+ <instruction order="299" opcode="WRITE">
+  <arg1 type="string">\010\009Reálná\032hodnota:\032</arg1>
+ </instruction>
+ <instruction order="300" opcode="WRITE">
+  <arg1 type="var">LF@testB</arg1>
+ </instruction>
+ <instruction order="301" opcode="WRITE">
+  <arg1 type="string">\010</arg1>
+ </instruction>
+ <instruction order="302" opcode="JUMPIFEQ">
+  <arg1 type="label">ok</arg1>
+  <arg2 type="var">LF@testA</arg2>
+  <arg3 type="var">LF@testB</arg3>
+ </instruction>
+ <instruction order="303" opcode="WRITE">
+  <arg1 type="string">\009FAIL!\010</arg1>
+ </instruction>
+ <instruction order="304" opcode="JUMP">
+  <arg1 type="label">test_end</arg1>
+ </instruction>
+ <instruction order="305" opcode="LABEL">
+  <arg1 type="label">ok</arg1>
+ </instruction>
+ <instruction order="306" opcode="WRITE">
+  <arg1 type="string">\009OK!\010</arg1>
+ </instruction>
+ <instruction order="307" opcode="POPFRAME">
+ </instruction>
+ <instruction order="308" opcode="RETURN">
+ </instruction>
+ <instruction order="309" opcode="LABEL">
+  <arg1 type="label">test_end</arg1>
+ </instruction>
+ <instruction order="310" opcode="POPFRAME">
+ </instruction>
+ <instruction order="311" opcode="RETURN">
+ </instruction>
+ <instruction order="312" opcode="LABEL">
+  <arg1 type="label">end</arg1>
+ </instruction>
+</program>

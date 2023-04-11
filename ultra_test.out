@@ -1,0 +1,124 @@
+Aritmetika
+Test [1]
+	Očekávaná hodnota: 15
+	Reálná hodnota: 15
+	OK!
+Test [2]
+	Očekávaná hodnota: 5
+	Reálná hodnota: 5
+	OK!
+Test [3]
+	Očekávaná hodnota: 50
+	Reálná hodnota: 50
+	OK!
+Test [4]
+	Očekávaná hodnota: 2
+	Reálná hodnota: 2
+	OK!
+Logika - int
+Test [5]
+	Očekávaná hodnota: false
+	Reálná hodnota: false
+	OK!
+Test [6]
+	Očekávaná hodnota: true
+	Reálná hodnota: true
+	OK!
+Test [7]
+	Očekávaná hodnota: false
+	Reálná hodnota: false
+	OK!
+Test [8]
+	Očekávaná hodnota: true
+	Reálná hodnota: true
+	OK!
+Logika - string
+Test [9]
+	Očekávaná hodnota: false
+	Reálná hodnota: false
+	OK!
+Test [10]
+	Očekávaná hodnota: true
+	Reálná hodnota: true
+	OK!
+Test [11]
+	Očekávaná hodnota: false
+	Reálná hodnota: false
+	OK!
+Test [12]
+	Očekávaná hodnota: true
+	Reálná hodnota: true
+	OK!
+Logika - bool
+Test [13]
+	Očekávaná hodnota: false
+	Reálná hodnota: false
+	OK!
+Test [14]
+	Očekávaná hodnota: true
+	Reálná hodnota: true
+	OK!
+Test [15]
+	Očekávaná hodnota: false
+	Reálná hodnota: false
+	OK!
+Test [16]
+	Očekávaná hodnota: true
+	Reálná hodnota: true
+	OK!
+Test [17]
+	Očekávaná hodnota: false
+	Reálná hodnota: false
+	OK!
+Test [18]
+	Očekávaná hodnota: true
+	Reálná hodnota: true
+	OK!
+Test [19]
+	Očekávaná hodnota: true
+	Reálná hodnota: true
+	OK!
+Loops
+Zadej počet iterací: 69
+Test [20]
+	Očekávaná hodnota: 69
+	Reálná hodnota: 69
+	OK!
+String, typy
+Test [21]
+	Očekávaná hodnota: 4
+	Reálná hodnota: 4
+	OK!
+Test [22]
+	Očekávaná hodnota: d
+	Reálná hodnota: d
+	OK!
+Test [23]
+	Očekávaná hodnota: aaoa
+	Reálná hodnota: aaoa
+	OK!
+Test [24]
+	Očekávaná hodnota: string
+	Reálná hodnota: string
+	OK!
+Test [25]
+	Očekávaná hodnota: int
+	Reálná hodnota: int
+	OK!
+Test [26]
+	Očekávaná hodnota:
+	Reálná hodnota:
+	OK!
+Test [27]
+	Očekávaná hodnota: nil
+	Reálná hodnota: nil
+	OK!
+Stack
+Test [28]
+	Očekávaná hodnota: second_in
+	Reálná hodnota: second_in
+	OK!
+Test [29]
+	Očekávaná hodnota: first_in
+	Reálná hodnota: first_in
+	OK!

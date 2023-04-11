@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program language="IPPcode23">
+    <instruction order="1" opcode="JUMP">
+        <arg1 type="label">start</arg1>
+    </instruction>
+    <instruction order="2" opcode="LABEL">
+    	<arg1 type="label">jmeno</arg1>
+    </instruction>
+    <instruction order="3" opcode="RETURN">
+    </instruction>
+    <instruction order="4" opcode="EXIT">
+    	<arg1 type="int">0</arg1>
+    </instruction>
+    <instruction order="5" opcode="LABEL">
+    	<arg1 type="label">start</arg1>
+    </instruction>
+    <instruction order="6" opcode="DEFVAR">
+    	<arg1 type="var">GF@a</arg1>
+    </instruction>
+    <instruction order="7" opcode="MOVE">
+        <arg1 type="var">GF@a</arg1>
+        <arg2 type="int">42</arg2>
+    </instruction>
+    <instruction order="8" opcode="CALL">
+        <arg1 type="label">jmeno</arg1>
+    </instruction>
+    <instruction order="9" opcode="WRITE">
+        <arg1 type="var">GF@a</arg1>
+    </instruction>
+</program>

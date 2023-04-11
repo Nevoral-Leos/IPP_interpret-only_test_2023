@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program language="IPPcode23">
+    <instruction order="1" opcode="DEFVAR">
+    	<arg1 type="var">GF@c</arg1>
+    </instruction>
+    <instruction order="2" opcode="AND">
+        <arg1 type="var">GF@c</arg1>
+        <arg2 type="bool">true</arg2>
+        <arg3 type="bool">true</arg3>
+    </instruction>
+    <instruction order="3" opcode="WRITE">
+    	<arg1 type="var">GF@c</arg1>
+    </instruction>
+</program>

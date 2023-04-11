@@ -14,7 +14,7 @@
         <arg1 type="var">GF@a</arg1>
     </instruction>
     <instruction order="5" opcode="JUMPIFNEQ">
-        <arg1 type="labe">end</arg1>
+        <arg1 type="label">end</arg1>
         <arg2 type="int">42</arg2>
         <arg3 type="var">GF@a</arg3>
     </instruction>

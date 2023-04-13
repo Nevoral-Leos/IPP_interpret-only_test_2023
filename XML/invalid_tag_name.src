@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program language="IPPcode23">
+
+<not_instruction order="0 " opcode="write">
+<arg1  type="string">aa</arg1 >
+</not_instruction>
+</program>

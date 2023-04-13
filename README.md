@@ -29,3 +29,5 @@ cd /test_dir/
 or
 
 `INTERPRET=../interpret.py ./test.sh`
+
+By default `test.sh` exits on first error, but specifying `NO_EXIT=1` will cause it to run all tests and print number of failed and passed tests

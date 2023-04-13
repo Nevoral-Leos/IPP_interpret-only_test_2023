@@ -12,7 +12,7 @@ fi
 for x in $(find "$PWD" -name '*.src')
 do
   #spuštění interptetu
-  python3 -O "$INTERPRET" --source="$x" --input="${x%.src}.in" > "${x%.src}.my_out"
+  timeout 2 python3 -O "$INTERPRET" --source="$x" --input="${x%.src}.in" > "${x%.src}.my_out"
 
   #uložení návratové hodnoty
   echo $? | tr -d '\n' > "${x%.src}.my_rc"

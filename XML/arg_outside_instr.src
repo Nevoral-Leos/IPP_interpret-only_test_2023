@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program language="IPPcode23">
+
+		<arg1  type="var">GF@a</arg1 >
+		<arg2  type="var">GF@a</arg2 >
+	<instruction order="1 " opcode="move"> 
+		<arg1  type="var">GF@a</arg1 >
+		<arg2  type="string"> abc </arg2 >
+	</instruction>
+	<instruction order="2 " opcode="Write"> 
+		<arg1  type="var">GF@a</arg1 >
+	</instruction>
+</program>

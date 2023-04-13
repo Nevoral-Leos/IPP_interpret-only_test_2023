@@ -1,0 +1,19 @@
+define(i_count, 1)dnl
+define(a_count, 1)dnl
+define(instr_counter, `i_count define(`i_count', incr(i_count))')dnl
+define(arg_counter, `a_count define(`a_count', incr(a_count))')dnl
+
+define(_defvar, "
+ <instruction order="1" opcode="DEFVAR">
+  <arg1 type="var">GF@a</arg1>
+ </instruction>
+")dnl
+define(start_instr, <instruction order="`instr_counter'" opcode="$1"> dnl
+`define(`a_count', 1)')dnl
+define(end_instr, </instruction>)dnl
+define(add_arg, create_arg( `arg_counter', $1, $2))dnl
+define(create_arg, <arg$1 type="$2">$3</arg$1>)dnl
+define(program_start, `<?xml version="1.0" encoding="UTF-8"?>
+<program language="IPPcode23">
+')
+define(program_end, `</program>')

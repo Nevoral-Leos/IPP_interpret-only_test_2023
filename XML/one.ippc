@@ -1,0 +1,7 @@
+.IPPCode23
+<instruction order="0 " opcode="DeFVar"> 
+<arg1  type="bOol">false</arg1 >
+<arg2  type="bool">false</arg2 >
+</instruction>
+<instruction order="1 " opcode="DeFVar"> 
+<instruction order="2 " opcode="DeFVar"> 

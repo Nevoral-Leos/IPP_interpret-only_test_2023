@@ -1,4 +1,4 @@
-define(i_count, 0)dnl
+define(i_count, 1)dnl
 define(a_count, 1)dnl
 define(instr_counter, `i_count define(`i_count', incr(i_count))')dnl
 define(arg_counter, `a_count define(`a_count', incr(a_count))')dnl

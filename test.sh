@@ -4,6 +4,8 @@
 # cd /directory_with_tests/
 # ../test.sh
 
+PASSED=0
+FAILED=0
 
 if [[ -z "$INTERPRET" ]] ; then
   INTERPRET=../../interpret.py
@@ -45,10 +47,15 @@ do
   if [[ $PASS -eq 1 ]]
   then
     printf "\e[1;32mPASS\e[0m %s\n" "$x"
+    PASSED=$((PASSED+1))
   else
     if [[ -z "$NO_EXIT" ]] ; then
       exit
+    else
+      FAILED=$((FAILED+1))
     fi
   fi
-
 done
+
+printf "PASSED: %d\n" $PASSED
+printf "FAILED: %d\n" $FAILED

@@ -55,7 +55,7 @@ python3 -O ../../interpret.py --source=/home/mates/code/fit/IPP/nevos-tests/1WRI
 ```
 what does it mean?
 
-Bad stdout means that your output did not match expected output (in this example interptet retuned `true`, but testing script expected `rue`)
+Bad stdout means that your output did not match expected output (in this example interptet printed to stdou `true`, but testing script expected `rue`)
 ignore the `\ No newline at end of file` message (that is there because how the tests are implemented).
 
 Bad RC is bad return code (or return value).

@@ -31,3 +31,37 @@ or
 `INTERPRET=../interpret.py ./test.sh`
 
 By default `test.sh` exits on first error, but specifying `NO_EXIT=1` will cause it to run all tests and print number of failed and passed tests
+
+## Failure
+
+On failure you might get an error output looking like this
+
+```
+Bad stdout /home/mates/code/fit/IPP/nevos-tests/1WRITE/write_bool.src
+1c1
+< true
+\ No newline at end of file
+---
+> rue
+
+run this test with:
+python3 -O ../../interpret.py --source=/home/mates/code/fit/IPP/nevos-tests/1WRITE/write_bool.src --input=/home/mates/code/fit/IPP/nevos-tests/1WRITE/write_bool.in
+Bad RC /home/mates/code/fit/IPP/nevos-tests/1WRITE/write_bool.src
+got rc | expected rc
+0     \	69
+
+run this test with:
+python3 -O ../../interpret.py --source=/home/mates/code/fit/IPP/nevos-tests/1WRITE/write_bool.src --input=/home/mates/code/fit/IPP/nevos-tests/1WRITE/write_bool.in
+```
+what does it mean?
+
+Bad stdout means that your output did not match expected output (in this example interptet retuned `true`, but testing script expected `rue`)
+ignore the `\ No newline at end of file` message (that is there because how the tests are implemented).
+
+Bad RC is bad return code (or return value).
+In this example testing script expected return code 69, but received code 0.
+
+last line (after "run this test with:") is how it was ran, this can help you to debug faster.
+
+
+Good luck :)
